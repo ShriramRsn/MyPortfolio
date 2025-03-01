@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  height: 100dvh;
+  min-height: 500px;
+  padding: 20px;
+}
+
+.hero {
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+
+span {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+span a img {
+  width: 30px;
+  transition: transform 200ms ease-in-out;
+}
+
+span a img:hover {
+  transform: scale(1.1);
+}
+
+a {
+  width: fit-content;
+  align-self: center;
+}
+
+button {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border: none;
+  border-radius: 20px;
+  width: 140px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.colorModeContainer {
+  position: relative;
+}
+
+.colorMode {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.description {
+  max-width: 24ch;
+  margin-bottom: 20px; 
+  line-height: 1.6; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hero {
+    max-width: 50%;
+  }
+
+  span {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  span a img {
+    width: 28px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .hero {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    max-width: 400px;
+  }
+}

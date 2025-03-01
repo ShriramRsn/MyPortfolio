@@ -1,13 +1,13 @@
-import styles from './HeroStyles.module.css';
-import heroImg from '../assets/HeroImg.png';
-import sun from '../assets/sun.svg';
-import moon from '../assets/moon.svg';
-import githubLight from '../assets/github-light.svg';
-import githubDark from '../assets/github-dark.svg';
-import linkedinLight from '../assets/linkedin-light.svg';
-import linkedinDark from '../assets/linkedin-dark.svg';
-import CV from '../assets/Shriram_CV.pdf';
-import { useTheme } from '../common/ThemeContext';
+import styles from '../LandingPage/HeroStyles.module.css';
+import heroImg from '../../assets/HeroImg.png';
+import sun from '../../assets/sun.svg';
+import moon from '../../assets/moon.svg';
+import githubLight from '../../assets/github-light.svg';
+import githubDark from '../../assets/github-dark.svg';
+import linkedinLight from '../../assets/linkedin-light.svg';
+import linkedinDark from '../../assets/linkedin-dark.svg';
+import CV from '../../assets/Shriram_CV.pdf';
+import { useTheme } from '../../common/themeContext';
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
@@ -35,7 +35,7 @@ function Hero() {
         <h1>
           Shriram R S
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2>Software Developer</h2>
         <span>
           <a href="https://github.com/ShriramRsn" target="_blank">
             <img src={githubIcon} alt="Github icon" />
@@ -45,8 +45,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+        Passionate about web apps with HTML, Tailwind CSS, JavaScript, React and skilled in Java, Python (ML).
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>
