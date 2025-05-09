@@ -23,7 +23,7 @@ const Projects = () => {
         />
         <ProjectsCard
           src={car}
-          link="https://github.com/ShriramRsn/OCR"
+          link="https://github.com/ShriramRsn/Car-Price-Detection"
           h3="Car Price"
           p="Car Price Detection program"
         />

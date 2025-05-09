@@ -32,7 +32,39 @@
   @media (width >= 800px) {
     .projectsContainer {
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: wrap;.container {
+        padding: 80px 20px;
+        background-color: #f8fafc;
+        text-align: center;
+      }
+      
+      .sectionTitle {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        color: #1f2937;
+      }
+      
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        padding: 0 30px;
+      }
+      
+      .cardWrapper {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .cardWrapper:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+      }
+      
       justify-content: space-evenly;
       padding: 0 30px;
     }

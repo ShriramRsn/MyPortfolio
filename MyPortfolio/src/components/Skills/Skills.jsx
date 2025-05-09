@@ -13,6 +13,7 @@ const ProgressSection = () => {
     { title: "React", description: "Intermediate in React.js" },
     { title: "Java", description: "Problem Solving & Competitive Coding" },
     { title: "Python", description: "Machine Learning Enthusiast" },
+    { title: "Docker", description: "Containerization and environment management" },
   ];
 
   const sectionTextColor = theme === "light" ? "#333333" : "#E5E7EB";
